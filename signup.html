@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Stackly</title>
+    <link rel="icon" type="image/x-icon" href="logo-stackly (1).png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card animate">
+            <a href="index.html" class="home-btn-pill">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                Home
+            </a>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="logo-stackly (1).png" alt="Stackly Logo" style="height: 60px; width: auto; margin-bottom: 1rem;">
+                <h2 style="font-size: 2.2rem; color: #0b213b; font-weight: 800;">Create Account</h2>
+                <p style="color: var(--text-secondary); font-weight: 600;">Join the network of 15M+ global tech analysts</p>
+            </div>
+            <form onsubmit="event.preventDefault(); window.location.href='404.html'">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Work Email</label>
+                    <input type="email" id="email" placeholder="example@stackly.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+                <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms" style="font-size: 0.85rem; color: var(--text-secondary);">I agree to the <a href="404.html" style="color: var(--primary-color);">Terms of Service</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">Register Now</button>
+            </form>
+            <div style="margin-top: 1.5rem; text-align: center; border-top: 1px solid #f1f5f9; padding-top: 1.5rem;">
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Already have an account? <a href="signin.html" style="color: var(--primary-color); font-weight: 700; text-decoration: none;">Log In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="common.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Still In The Lab</title>
+    <link rel="icon" type="image/x-icon" href="logo-stackly (1).png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f0f4f8; /* Soft blue/lavender background to match image */
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .error-code {
+            font-size: 15rem; /* Larger font size as seen in the image */
+            font-weight: 900;
+            color: #537fe7; /* Vibrant blue matches the image */
+            line-height: 1;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            color: #4b5563;
+            margin: 2rem 0 3rem;
+            font-weight: 500;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-prev {
+            padding: 0.8rem 2.5rem;
+            border: 2px solid #537fe7;
+            border-radius: 50px; /* Fully rounded buttons */
+            background: transparent;
+            color: #537fe7;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-prev:hover {
+            background: rgba(83, 127, 231, 0.1);
+        }
+
+        .btn-home {
+            padding: 0.9rem 2.5rem;
+            background: linear-gradient(135deg, #537fe7 0%, #3a5cc5 100%);
+            border-radius: 50px; /* Fully rounded buttons */
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            box-shadow: 0 10px 20px rgba(83, 127, 231, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(83, 127, 231, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oops! The breakthrough you're looking for is still in the lab.</p>
+        
+        <div class="button-group">
+            <button onclick="if(document.referrer){ window.history.back(); } else { window.location.href='index.html'; }" class="btn-prev">Previous Page</button>
+            <button onclick="window.location.href='index.html'" class="btn-home">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>
