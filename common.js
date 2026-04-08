@@ -121,7 +121,7 @@ function attachButtonListeners() {
 
         // Bypassing 404 for specific functional elements
         const isFunctional = (
-            target.closest('.nav-links') || 
+            target.closest('.nav-links') ||
             target.closest('.footer-links') ||
             target.closest('.sidebar-nav') ||
             target.classList.contains('sidebar-item') ||
@@ -171,7 +171,7 @@ function handleSidebarClick(item) {
     }
 
     const dashboardTitle = document.querySelector('main h1');
-    
+
     // Hide all view-content containers
     const allViews = document.querySelectorAll('.view-content');
     allViews.forEach(v => v.style.display = 'none');
@@ -180,7 +180,7 @@ function handleSidebarClick(item) {
     let targetViewId = 'view-' + viewName.replace(/\s+/g, '-');
     const targetView = document.getElementById(targetViewId);
     const genericView = document.getElementById('view-generic');
-    
+
     if (targetView) {
         targetView.style.display = 'block';
     } else if (genericView) {
@@ -243,7 +243,7 @@ function initDashboard() {
 
         sidebarMenu.innerHTML = role === 'admin' ? adminItems : customerItems;
     }
-    
+
     if (adminPanel && customerPanel) {
         if (role === 'admin') {
             adminPanel.style.display = 'block';
@@ -261,7 +261,7 @@ function initDashboard() {
         dashToggle.addEventListener('click', () => {
             sidebar.classList.toggle('active');
         });
-        
+
         // Auto-close sidebar on item click
         sidebar.addEventListener('click', (e) => {
             if (e.target.closest('.sidebar-item')) {
@@ -282,11 +282,11 @@ document.body.addEventListener('click', (e) => {
 function toggleMobileMenu() {
     const navLinks = document.querySelector('.nav-links');
     const toggle = document.getElementById('mobile-toggle');
-    
+
     if (navLinks) {
         navLinks.classList.toggle('nav-active');
         document.body.classList.toggle('no-scroll');
-        
+
         if (toggle) {
             toggle.classList.toggle('toggle-active');
         }
@@ -294,5 +294,5 @@ function toggleMobileMenu() {
 }
 
 // Keeping empty for compatibility if called elsewhere
-function initMobileToggle() {}
+function initMobileToggle() { }
 
