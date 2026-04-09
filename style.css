@@ -197,9 +197,37 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
 }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr !important; }
+}
+
 
 .card {
     background: var(--card-bg);
@@ -663,7 +691,12 @@ footer {
     font-weight: 700;
     font-size: 0.9rem;
     color: #1e293b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
+
 
 .user-meta .user-email {
     display: block;
@@ -813,10 +846,17 @@ footer {
 /* Mid Section */
 .mid-grid {
     display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
     margin: 2rem 0;
 }
+
+@media (max-width: 900px) {
+    .mid-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .progress-section {
     background: white;
@@ -990,11 +1030,23 @@ footer {
         gap: 1rem !important;
     }
 
-    .footer-top {
-        grid-template-columns: 1fr 1fr !important;
-        gap: 2rem !important;
+    .view-content .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Universal Responsive Table Wrapper */
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 1rem;
+    }
+
+    .table-responsive table {
+        min-width: 600px;
     }
 }
+
 
 @media (max-width: 768px) {
     body {
@@ -1226,4 +1278,10 @@ footer {
 .action-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+/* Final Responsive Polish */
+@media (max-width: 768px) {
+    img { max-width: 100% !important; height: auto !important; }
+    form { flex-direction: column !important; }
+    form button { width: 100% !important; }
 }

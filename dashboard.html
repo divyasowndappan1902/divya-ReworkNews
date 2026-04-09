@@ -16,7 +16,7 @@
         <aside class="sidebar">
             <div class="sidebar-logo">
                 <img src="logo-stackly (1).png" alt="Stackly">
-                <span class="brand-text" id="sidebarBrand">PORTAL</span>
+                <span class="brand-text" id="sidebarBrand"></span>
             </div>
 
             <nav class="sidebar-nav">
@@ -101,7 +101,8 @@
                         </div>
                     </div>
 
-                    <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                    <div class="grid-4">
+
                         <div class="dash-card card-blue">
                             <div class="dash-card-header"><span class="dash-card-title">Total Readers</span></div>
                             <div class="dash-card-value">124,500</div>
@@ -194,7 +195,9 @@
                             </select>
                         </div>
 
+                        <div class="table-responsive">
                         <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+
                             <thead>
                                 <tr style="text-align: left; border-bottom: 1px solid #e2e8f0; color: #64748b;">
                                     <th style="padding: 12px 0;">Author</th>
@@ -237,7 +240,8 @@
                     </div>
 
                     <!-- Editorial Tools -->
-                    <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem;">
+                    <div class="grid-3" style="margin-top: 1.5rem;">
+
                         <button class="btn btn-outline"
                             style="background: white; font-size: 0.8rem; height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
                             <span style="font-size: 1.2rem;">🔍</span>
@@ -256,152 +260,6 @@
                     </div>
                 </div>
 
-                <!-- Content & Media View -->
-                <div id="view-content-&-media" class="view-content" style="display: none;">
-                    <div
-                        style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: flex-end;">
-                        <div>
-                            <h1 style="font-size: 1.8rem; font-weight: 800; color: #1e293b;">Content & Media</h1>
-                            <p style="color: #64748b;">Manage the portal's high-authority WebP assets and media library.
-                            </p>
-                        </div>
-                        <div style="display: flex; gap: 15px;">
-                            <div style="text-align: center;">
-                                <div style="font-size: 1.1rem; font-weight: 900; color: #3b82f6;">1,240</div>
-                                <div style="font-size: 0.7rem; color: #64748b;">TOTAL ASSETS</div>
-                            </div>
-                            <div style="text-align: center;">
-                                <div style="font-size: 1.1rem; font-weight: 900; color: #10b981;">84%</div>
-                                <div style="font-size: 0.7rem; color: #64748b;">STORAGE USED</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid" style="grid-template-columns: 1fr; gap: 1.5rem;">
-                        <div>
-                            <div class="dash-card">
-                                <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                                    <!-- Asset 1 -->
-                                    <div
-                                        style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; text-align: center;">
-                                        <div
-                                            style="aspect-ratio: 16/9; background: #e2e8f0; border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #64748b;">
-                                            AI_Report_Banner.webp</div>
-                                        <div style="font-size: 0.85rem; font-weight: 700;">AI_Report_Banner.webp</div>
-                                        <div style="font-size: 0.75rem; color: #94a3b8;">142 KB • 1920x1080</div>
-                                    </div>
-                                    <!-- Asset 2 -->
-                                    <div
-                                        style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; text-align: center;">
-                                        <div
-                                            style="aspect-ratio: 16/9; background: #e2e8f0; border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #64748b;">
-                                            Logo_Primary.webp</div>
-                                        <div style="font-size: 0.85rem; font-weight: 700;">Logo_Primary.webp</div>
-                                        <div style="font-size: 0.75rem; color: #94a3b8;">45 KB • 512x512</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Analytics & Reports View -->
-                <div id="view-analytics-&-reports" class="view-content" style="display: none;">
-                    <div
-                        style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: flex-end;">
-                        <div>
-                            <h1 style="font-size: 1.8rem; font-weight: 800; color: #1e293b;">Analytics & Reports</h1>
-                            <p style="color: #64748b;">Global portal performance insights and data-driven journalism
-                                trends.</p>
-                        </div>
-                        <div style="display: flex; gap: 10px;">
-                            <button class="btn btn-outline" style="font-size: 0.8rem; padding: 10px 20px;">Generate Q1
-                                Audit</button>
-                            <button class="btn btn-primary" style="font-size: 0.8rem; padding: 10px 20px;">Export Data
-                                Suite</button>
-                        </div>
-                    </div>
-
-                    <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                        <div class="dash-card card-blue">
-                            <div class="dash-card-header"><span class="dash-card-title">Unique Visitors</span></div>
-                            <div class="dash-card-value">1.22M</div>
-                            <div class="dash-card-trend trend-up">↑ +18.4% MoM</div>
-                        </div>
-                        <div class="dash-card card-purple">
-                            <div class="dash-card-header"><span class="dash-card-title">Avg. Engagement</span></div>
-                            <div class="dash-card-value">4m 12s</div>
-                            <div class="dash-card-trend trend-up">↑ +22s Avg</div>
-                        </div>
-                        <div class="dash-card card-orange">
-                            <div class="dash-card-header"><span class="dash-card-title">Portal Loyalty Index</span>
-                            </div>
-                            <div class="dash-card-value">94.2</div>
-                            <div class="dash-card-trend">Steady Performance</div>
-                        </div>
-                    </div>
-
-                    <div class="grid" style="grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-top: 2rem;">
-                        <div>
-                            <div class="dash-card">
-                                <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">Top Performing
-                                    Content (24h)</h3>
-                                <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
-                                    <thead>
-                                        <tr style="text-align: left; border-bottom: 1px solid #e2e8f0; color: #64748b;">
-                                            <th style="padding: 10px 0;">Article</th>
-                                            <th style="padding: 10px 0;">Performance</th>
-                                            <th style="padding: 10px 0;">Traffic Score</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr style="border-bottom: 1px solid #f1f5f9;">
-                                            <td style="padding: 12px 0; font-weight: 700;">NexGen AI Frontier</td>
-                                            <td style="padding: 12px 0;">Excellent</td>
-                                            <td style="padding: 12px 0; color: #10b981;">98/100</td>
-                                        </tr>
-                                        <tr style="border-bottom: 1px solid #f1f5f9;">
-                                            <td style="padding: 12px 0; font-weight: 700;">Quantum Crypto 2026</td>
-                                            <td style="padding: 12px 0;">Growth</td>
-                                            <td style="padding: 12px 0; color: #3b82f6;">84/100</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="dash-card">
-                                <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">Regional
-                                    Engagement Insights</h3>
-                                <div style="display: flex; flex-direction: column; gap: 12px;">
-                                    <div class="progress-item">
-                                        <div class="progress-label"><span>USA (West Coast)</span><span>42%</span></div>
-                                        <div class="progress-bar-container">
-                                            <div class="progress-bar" style="width: 42%; background: #3b82f6;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-item">
-                                        <div class="progress-label"><span>India (Tier-1)</span><span>35%</span></div>
-                                        <div class="progress-bar-container">
-                                            <div class="progress-bar" style="width: 35%; background: #10b981;"></div>
-                                        </div>
-                                    </div>
-                                    <div class="progress-item">
-                                        <div class="progress-label"><span>EU Central Cluster</span><span>23%</span>
-                                        </div>
-                                        <div class="progress-bar-container">
-                                            <div class="progress-bar" style="width: 23%; background: #8b5cf6;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-outline"
-                                    style="width: 100%; margin-top: 1.5rem; background: #fafafa; font-weight: 700;">View
-                                    Global Heatmap</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
                     <!-- Predictive Trends -->
@@ -959,7 +817,8 @@
                 <p style="color: #64748b;">Welcome back, <span id="customerName">John Customer</span>.</p>
             </div>
 
-            <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+            <div class="grid-4">
+
                 <div class="dash-card">
                     <div class="dash-card-header">
                         <span class="dash-card-title">Next Update</span>
@@ -1022,7 +881,8 @@
                 <p style="color: #64748b;">Manage your portal access and exclusive tech reports.</p>
             </div>
 
-            <div class="grid" style="grid-template-columns: 1.5fr 1fr; gap: 1.5rem;">
+            <div class="grid-2">
+
                 <div>
                     <!-- Current Plan Details -->
                     <div class="dash-card" style="margin-bottom: 1.5rem;">
@@ -1091,7 +951,9 @@
                     <!-- Billing History -->
                     <div class="dash-card">
                         <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">Billing History</h3>
+                    <div class="table-responsive">
                         <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+
                             <thead>
                                 <tr style="text-align: left; border-bottom: 1px solid #e2e8f0; color: #64748b;">
                                     <th style="padding: 10px 0;">Date</th>
@@ -1117,6 +979,8 @@
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+
                     </div>
                 </div>
 
@@ -1172,7 +1036,8 @@
                 </div>
             </div>
 
-            <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div class="grid-3">
+
                 <!-- Article 1 -->
                 <div class="dash-card card-article" style="padding: 0; overflow: hidden; position: relative;">
                     <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=400&h=200&auto=format&fit=crop"
@@ -1229,6 +1094,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Reader Points View -->
@@ -1266,7 +1132,8 @@
 
                     <!-- Reward Bazaar -->
                     <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">Rewards Bazaar</h3>
-                    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="grid-2">
+
                         <div class="dash-card" style="text-align: center; padding: 1.5rem;">
                             <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔬</div>
                             <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Expert AI Report</h4>
@@ -1343,7 +1210,8 @@
                     Method</button>
             </div>
 
-            <div class="grid" style="grid-template-columns: 1.5fr 1fr; gap: 1.5rem;">
+            <div class="grid-2">
+
                 <div>
                     <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">Saved Cards</h3>
                     <div style="display: flex; flex-direction: column; gap: 1rem;">
@@ -1439,12 +1307,13 @@
                 <p style="color: #64748b;">Manage your identity, security, and data preferences on Stackly News.</p>
             </div>
 
-            <div class="grid" style="grid-template-columns: 1.25fr 2fr; gap: 1.5rem;">
+            <div class="grid-2">
+
                 <div>
                     <!-- Profile Basics -->
                     <div class="dash-card" style="text-align: center; padding: 2rem;">
                         <div style="position: relative; width: 100px; height: 100px; margin: 0 auto 1.5rem;">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&h=100&auto=format&fit=crop"
+                            <img src="customer-profile.webp"
                                 style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;"
                                 alt="John Customer">
                             <button
