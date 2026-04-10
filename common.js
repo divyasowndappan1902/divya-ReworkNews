@@ -116,8 +116,8 @@ function initContent() {
 function attachButtonListeners() {
     document.body.addEventListener('click', (e) => {
         // Find if we clicked an interactive element
-        const target = e.target.closest('button, .btn, .social-icon, .card, a');
-        if (!target) return;
+        const target = e.target.closest('button, .btn, .social-icon, .card, .dash-card, a');
+        if (!target || window.location.pathname.includes('404.html')) return;
 
         // Bypassing 404 for specific functional elements
         const isFunctional = (
@@ -138,19 +138,18 @@ function attachButtonListeners() {
             return;
         }
 
-        if (target.classList.contains('btn-signin-pill') || target.href?.includes('signin.html')) {
-            window.location.href = 'signin.html';
-            return;
-        }
+        const currentPath = window.location.pathname;
+        const isAlreadyOn404 = currentPath.includes('404.html');
 
-        if (target.classList.contains('home-btn-pill') || target.href?.includes('index.html')) {
-            window.location.href = 'index.html';
-            return;
-        }
-
-        if (!isFunctional && target.tagName === 'A' && target.href && !target.href.includes('#')) {
-            e.preventDefault();
-            window.location.href = '404.html';
+        if (!isFunctional && !isAlreadyOn404) {
+            if (target.tagName === 'BUTTON' || target.classList.contains('btn') || target.classList.contains('dash-card')) {
+                window.location.href = '404.html';
+                return;
+            }
+            if (target.tagName === 'A' && target.href && !target.href.includes('#') && !target.href.includes('javascript:void(0)') && !target.href.includes('404.html')) {
+                e.preventDefault();
+                window.location.href = '404.html';
+            }
         }
     });
 }
